@@ -1,0 +1,46 @@
+/* Nav Responsive Menu */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+    
+    nav a {
+        width: 100%;
+        text-align: left;
+        padding: 10px 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+    nav a:last-child {
+        border-bottom: none;
+    }
+}
+
+/* Hero section Responsive Design for smaller screens */
+@media (max-width: 768px) {
+    .hero-img img {
+        height: 300px;
+        object-fit: cover; /* Ensures the image covers the area even if cropped */
+    }
+    
+    .form-sec {
+        min-height: auto;
+        padding: 30px;
+    }
+    
+    .hero-sec .row {
+        flex-direction: column;
+    }
+    
+    .col-md-8, .col-md-4 {
+        width: 100%;
+        padding: 0;
+    }
+}
